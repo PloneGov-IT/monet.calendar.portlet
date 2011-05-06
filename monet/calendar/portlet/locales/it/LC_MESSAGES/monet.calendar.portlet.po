@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: monet.calendar.portlet\n"
+"POT-Creation-Date: 2011-05-06 15:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Marco Mariani <marco.mariani@redturtle.net>\n"
+"Language-Team: RedTurtle Technology <sviluppoplone@redturtle.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: it\n"
+"Language-Name: Italian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: monet.calendar.portlet\n"
+
+#: ./monetcalendarportlet.py:55
+msgid "Cache timeout"
+msgstr "Permanenza in cache"
+
+#: ./monetcalendarportlet.py:37
+msgid "Calendar Section"
+msgstr "Sezione Calendario"
+
+#: ./monetcalendarportlet.py:49
+msgid "Days after"
+msgid "Nr. giorni dopo"
+
+#: ./monetcalendarportlet.py:43
+msgid "Days before"
+msgid "Nr. giorni prima"
+
+#: ./monetcalendarportlet.pt:35
+msgid "Event type"
+msgstr "Tipo di evento"
+
+#: ./monetcalendarportlet.py:56
+msgid "Expiration time for cached results (in minutes)"
+msgstr "Tempo di scadenza dei risultati in cache (minuti)"
+
+#: ./monetcalendarportlet.py:50
+msgid "Number of days, after the current date, to include in the search"
+msgstr "Numero di giorni, dopo la data odierna, da includere nella ricerca"
+
+#: ./monetcalendarportlet.py:44
+msgid "Number of days, before the current date, to include in the search"
+msgstr "Numero di giorni, prima della data odierna, da includere nella ricerca"
+
+#: ./monetcalendarportlet.py:38
+msgid "Object providing the events to show in the portlet"
+msgstr "Oggetto che fornisce gli eventi da mostrare nella portlet"
+
+#: ./monetcalendarportlet.pt:31
+msgid "When"
+msgstr "Orari"
+
+#: ./monetcalendarportlet.pt:21
+msgid "Where"
+msgstr "Dove"
+

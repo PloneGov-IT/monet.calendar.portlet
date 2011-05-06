@@ -1,0 +1,63 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-06 15:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: monet.calendar.portlet\n"
+
+#: ./monetcalendarportlet.py:55
+msgid "Cache timeout"
+msgstr ""
+
+#: ./monetcalendarportlet.py:37
+msgid "Calendar Section"
+msgstr ""
+
+#: ./monetcalendarportlet.py:49
+msgid "Days after"
+msgstr ""
+
+#: ./monetcalendarportlet.py:43
+msgid "Days before"
+msgstr ""
+
+#: ./monetcalendarportlet.pt:35
+msgid "Event type"
+msgstr ""
+
+#: ./monetcalendarportlet.py:56
+msgid "Expiration time for cached results (in minutes)"
+msgstr ""
+
+#: ./monetcalendarportlet.py:50
+msgid "Number of days, after the current date, to include in the search"
+msgstr ""
+
+#: ./monetcalendarportlet.py:44
+msgid "Number of days, before the current date, to include in the search"
+msgstr ""
+
+#: ./monetcalendarportlet.py:38
+msgid "Object providing the events to show in the portlet"
+msgstr ""
+
+#: ./monetcalendarportlet.pt:31
+msgid "When"
+msgstr ""
+
+#: ./monetcalendarportlet.pt:21
+msgid "Where"
+msgstr ""
+

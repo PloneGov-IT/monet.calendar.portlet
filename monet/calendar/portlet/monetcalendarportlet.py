@@ -29,29 +29,25 @@ from monet.calendar.extensions.browser.monetsearchevents import daterange
 
 
 class IMonetCalendarPortlet(IPortletDataProvider):
-    """A portlet
 
-    It inherits from IPortletDataProvider because for this portlet, the
-    data that is being rendered and the portlet assignment itself are the
-    same.
-    """
-
-    header = schema.TextLine(title=PloneMessageFactory(u"Portlet header"),
-                             description=PloneMessageFactory(u"Title of the rendered portlet"),
+    header = schema.TextLine(title=PloneMessageFactory(u'Portlet header'),
+                             description=PloneMessageFactory(u'Title of the rendered portlet'),
                              required=True)
 
-    calendar_section_path = schema.Choice(title=_(u"Calendar Section"),
-                                          description=_(u"Object providing the events to show in the portlet"),
+    calendar_section_path = schema.Choice(title=_(u'Calendar Section'),
+                                          description=_(u'Object providing the events to show in the portlet'),
                                           required=True,
                                           source=SearchableTextSourceBinder({'object_provides': IMonetCalendarSection.__identifier__},
                                                                             default_query='path: '))
 
-    days_before = schema.Int(title=_('Nr. giorni prima'),
+    days_before = schema.Int(title=_('Days before'),
+                             description=_('Number of days, before the current date, to include in the search'),
                              required=True,
                              min=0,
                              default=0)
 
-    days_after = schema.Int(title=_('Nr. giorni dopo'),
+    days_after = schema.Int(title=_('Days after'),
+                            description=_('Number of days, after the current date, to include in the search'),
                             required=True,
                             min=0,
                             default=7)
@@ -60,7 +56,6 @@ class IMonetCalendarPortlet(IPortletDataProvider):
                          description=_(u'Expiration time for cached results (in minutes)'),
                          required=True,
                          default=0)
-
 
 
 
@@ -82,8 +77,6 @@ class Assignment(base.Assignment):
     @property
     def title(self):
         return self.header
-
-
 
 
 
@@ -133,9 +126,6 @@ class Renderer(base.Renderer):
 
 
     def search_root(self):
-        """
-        walks up hirarchy looking for 
-        """
         root = self.portal()
         node = root.restrictedTraverse(self.data.calendar_section_path.lstrip('/'))
 
@@ -157,16 +147,7 @@ class Renderer(base.Renderer):
 
 
 
-
-
-
 class AddForm(base.AddForm):
-    """Portlet add form.
-
-    This is registered in configure.zcml. The form_fields variable tells
-    zope.formlib which fields to display. The create() method actually
-    constructs the assignment that is being added.
-    """
     form_fields = form.Fields(IMonetCalendarPortlet)
     form_fields['calendar_section_path'].custom_widget = UberSelectionWidget
 
@@ -176,11 +157,6 @@ class AddForm(base.AddForm):
 
 
 class EditForm(base.EditForm):
-    """Portlet edit form.
-
-    This is registered with configure.zcml. The form_fields variable tells
-    zope.formlib which fields to display.
-    """
     form_fields = form.Fields(IMonetCalendarPortlet)
     form_fields['calendar_section_path'].custom_widget = UberSelectionWidget
 
