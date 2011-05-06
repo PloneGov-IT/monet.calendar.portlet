@@ -1,0 +1,61 @@
+<dl class="portlet portletMonetCalendarPortlet"
+    i18n:domain="monet.calendar.portlet">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span tal:replace="view/data/header" />
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <tal:events repeat="event view/events">
+        <dd class="portletItem odd">
+
+            <div class="searchEvent">
+                <h4>
+                    <a tal:attributes="href event/getURL"
+                       tal:content="event/Title" />
+                </h4>
+                <p class="documentDescription searchEventDescription"
+                   tal:content="event/Description"></p>
+                <div class="searchEventLocation">
+                    <strong i18n:translate="">Where</strong>:<br/>
+                    <span tal:replace="event/getLocation">
+                        location
+                    </span>
+                    <br tal:condition="python: event.getLocation and event.getAddress"/>
+                    <span tal:replace="event/getAddress">
+                        address
+                    </span>                            
+                </div>
+                <div class="searchEventTime">
+                    <strong i18n:translate="">When</strong>
+                    <p tal:replace="structure event/getTime" />
+                </div>
+                <div class="searchEventType" tal:define="event_types event/getEventType">
+                    <strong i18n:translate="">Event type</strong>:
+                    <span tal:condition="event_types" i18n:domain="monet.calendar.event"
+                          i18n:translate="" tal:content="python: event_types[0]" class="discreet">
+                        eventType
+                    </span>
+                    <span tal:omit-tag=""
+                          tal:condition="python: len(event_types) > 1" 
+                          tal:repeat="event_type python: event_types[1:]">
+                        |
+                        <span i18n:domain="monet.calendar.event" i18n:translate=""
+                              tal:content="event_type" class="discreet">
+                            eventType
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+        </dd>
+    </tal:events>
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        Footer
+        <span class="portletBottomRight"></span>
+    </dd>
+
+</dl>

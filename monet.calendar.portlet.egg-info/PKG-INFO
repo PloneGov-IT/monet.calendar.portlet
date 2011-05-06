@@ -1,0 +1,27 @@
+Metadata-Version: 1.0
+Name: monet.calendar.portlet
+Version: 0.1
+Summary: UNKNOWN
+Home-page: http://plone.org/products/monet.calendar.portlet
+Author: RedTurtle Technology
+Author-email: sviluppoplone@redturtle.it
+License: GPL
+Description: Introduction
+        ============
+        
+        
+        
+        This product may contain traces of nuts.
+        
+        Changelog
+        =========
+        
+        0.1dev (unreleased)
+        -------------------
+        
+        - Initial release
+        
+Keywords: plone plonegov calendar event monet
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
