@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: monet.calendar.portlet\n"
-"POT-Creation-Date: 2011-05-06 15:54+0000\n"
+"POT-Creation-Date: 2011-05-06 16:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Marco Mariani <marco.mariani@redturtle.net>\n"
 "Language-Team: RedTurtle Technology <sviluppoplone@redturtle.net>\n"
@@ -24,11 +24,11 @@ msgstr "Sezione Calendario"
 
 #: ./monetcalendarportlet.py:49
 msgid "Days after"
-msgid "Nr. giorni dopo"
+msgstr "Nr. giorni dopo"
 
 #: ./monetcalendarportlet.py:43
 msgid "Days before"
-msgid "Nr. giorni prima"
+msgstr "Nr. giorni prima"
 
 #: ./monetcalendarportlet.pt:35
 msgid "Event type"
