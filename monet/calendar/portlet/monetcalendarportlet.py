@@ -113,7 +113,6 @@ class Renderer(base.Renderer):
 
 
     def events(self):
-        context = self.context
         catalog = getToolByName(self, 'portal_catalog')
         query = {
                 'object_provides': IMonetEvent.__identifier__,
