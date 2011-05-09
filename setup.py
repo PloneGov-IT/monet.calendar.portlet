@@ -5,7 +5,7 @@ version = '0.1.0'
 
 setup(name='monet.calendar.portlet',
       version=version,
-      description="",
+      description="An  alternative calendar portlet for the Plone Monet Calendar events suite",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -26,7 +26,7 @@ setup(name='monet.calendar.portlet',
       install_requires=[
           'setuptools',
           'monet.calendar.event',
-          'monet.calendar.extensions',
+          'monet.calendar.extensions>=0.9.0',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

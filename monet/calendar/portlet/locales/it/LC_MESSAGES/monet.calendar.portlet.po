@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: monet.calendar.portlet\n"
-"POT-Creation-Date: 2011-05-09 07:15+0000\n"
+"POT-Creation-Date: 2011-05-09 15:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Marco Mariani <marco.mariani@redturtle.net>\n"
 "Language-Team: RedTurtle Technology <sviluppoplone@redturtle.net>\n"
@@ -14,42 +14,51 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: monet.calendar.portlet\n"
 
-#: ../monetcalendarportlet.py:61
+#: ../monetcalendarportlet.py:71
 msgid "Cache timeout"
 msgstr "Permanenza in cache"
 
-#: ../monetcalendarportlet.py:38
+#: ../monetcalendarportlet.py:39
 msgid "Calendar Section"
 msgstr "Sezione Calendario"
 
-#: ../monetcalendarportlet.py:53
+#: ../monetcalendarportlet.py:54
 msgid "Days after"
 msgstr "Nr. giorni dopo"
 
-#: ../monetcalendarportlet.py:45
+#: ../monetcalendarportlet.py:46
 msgid "Days before"
 msgstr "Nr. giorni prima"
 
-#: ../monetcalendarportlet.py:62
+#: ../monetcalendarportlet.py:72
 msgid "Expiration time for cached results (in minutes)"
 msgstr "Tempo di scadenza dei risultati in cache (minuti)"
 
+#: ../monetcalendarportlet.py:62
+msgid "Hide portlet"
+msgstr "Nascondi riquadro"
+
 #. Default: "Calendar section providing the events to be shown in the portlet"
-#: ../monetcalendarportlet.py:39
+#: ../monetcalendarportlet.py:40
 msgid "calendar_section_path"
 msgstr "Sezione calendario che fornisce gli eventi da mostrare nel riquadro"
 
 #. Default: "Number of days, after the current date, to be included in the search.\n Keep 0 to show only today events."
-#: ../monetcalendarportlet.py:54
+#: ../monetcalendarportlet.py:55
 msgid "days_after_help"
 msgstr ""
 "Numero di giorni, dopo la data corrente, da includere nella ricerca\n"
 "Lascia 0 per mostrare solo gli eventi di oggi."
 
 #. Default: "Number of days, before the current date, to be included in the search.\n Keep 0 to show only today events."
-#: ../monetcalendarportlet.py:46
+#: ../monetcalendarportlet.py:47
 msgid "days_before_help"
 msgstr ""
 "Numero di giorni, prima della data corrente, da includere nella ricerca\n"
 "Lascia 0 per mostrare solo gli eventi di oggi."
+
+#. Default: "Tick this box if you want to render the text above without the standard header, border or footer."
+#: ../monetcalendarportlet.py:63
+msgid "hide_portlet_help"
+msgstr "Seleziona se vuoi visualizzare il riquadro senza le solite sezioni di intestazione, bordi e piè di pagina."
 

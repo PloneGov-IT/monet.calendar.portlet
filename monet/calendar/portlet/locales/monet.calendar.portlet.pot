@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-05-09 07:15+0000\n"
+"POT-Creation-Date: 2011-05-09 15:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,38 +17,47 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: monet.calendar.portlet\n"
 
-#: ../monetcalendarportlet.py:61
+#: ../monetcalendarportlet.py:71
 msgid "Cache timeout"
 msgstr ""
 
-#: ../monetcalendarportlet.py:38
+#: ../monetcalendarportlet.py:39
 msgid "Calendar Section"
 msgstr ""
 
-#: ../monetcalendarportlet.py:53
+#: ../monetcalendarportlet.py:54
 msgid "Days after"
 msgstr ""
 
-#: ../monetcalendarportlet.py:45
+#: ../monetcalendarportlet.py:46
 msgid "Days before"
 msgstr ""
 
-#: ../monetcalendarportlet.py:62
+#: ../monetcalendarportlet.py:72
 msgid "Expiration time for cached results (in minutes)"
 msgstr ""
 
+#: ../monetcalendarportlet.py:62
+msgid "Hide portlet"
+msgstr ""
+
 #. Default: "Calendar section providing the events to be shown in the portlet"
-#: ../monetcalendarportlet.py:39
+#: ../monetcalendarportlet.py:40
 msgid "calendar_section_path"
 msgstr ""
 
 #. Default: "Number of days, after the current date, to be included in the search.\n Keep 0 to show only today events."
-#: ../monetcalendarportlet.py:54
+#: ../monetcalendarportlet.py:55
 msgid "days_after_help"
 msgstr ""
 
 #. Default: "Number of days, before the current date, to be included in the search.\n Keep 0 to show only today events."
-#: ../monetcalendarportlet.py:46
+#: ../monetcalendarportlet.py:47
 msgid "days_before_help"
+msgstr ""
+
+#. Default: "Tick this box if you want to render the text above without the standard header, border or footer."
+#: ../monetcalendarportlet.py:63
+msgid "hide_portlet_help"
 msgstr ""
 

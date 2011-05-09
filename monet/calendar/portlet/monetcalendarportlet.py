@@ -12,6 +12,7 @@ from zope.interface import implements
 from zope import schema
 
 from plone.memoize import ram
+from plone.memoize.instance import memoize
 from plone.memoize.compress import xhtml_compress
 from plone.portlets.interfaces import IPortletDataProvider
 from plone.app.form.widgets.uberselectionwidget import UberSelectionWidget
@@ -58,6 +59,15 @@ class IMonetCalendarPortlet(IPortletDataProvider):
                             min=0,
                             default=7)
 
+    omit_border = schema.Bool(title=_(u"Hide portlet"),
+                              description=_('hide_portlet_help',
+                                            _(u"Tick this box if you want to render the text above "
+                                               "without the standard header, border or footer.")
+                                             ),
+                              required=True,
+                              default=False)
+
+
     timeout = schema.Int(title=_(u'Cache timeout'),
                          description=_(u'Expiration time for cached results (in minutes)'),
                          required=True,
@@ -71,18 +81,25 @@ class Assignment(base.Assignment):
 
     implements(IMonetCalendarPortlet)
 
+    header = u''
+    calendar_section_path = u'path: '
+    days_before = 0
+    days_after = 0
+    omit_border = False
+    timeout = 0
 
-    def __init__(self, header, calendar_section_path, days_before, days_after, timeout):
+    def __init__(self, header, calendar_section_path, days_before, days_after, omit_border, timeout):
         self.header = header
         self.calendar_section_path = calendar_section_path
         self.days_before = days_before
         self.days_after = days_after
+        self.omit_border = omit_border
         self.timeout = timeout
 
 
     @property
     def title(self):
-        return self.header
+        return 'Calendar: ' + self.header
 
 
 
@@ -110,6 +127,29 @@ def _key(method, rend):
 class Renderer(base.Renderer):
     _template = ViewPageTemplateFile('monetcalendarportlet.pt')
 
+    @property
+    def calendar_section(self):
+        root = self.portal()
+        calendar = root.restrictedTraverse(self.data.calendar_section_path.lstrip('/'), default=None)
+        return calendar
+
+    @property    
+    def calendar_view(self):
+        calendar_view = getMultiAdapter((self.calendar_section, self.request), name=u'monetsearchevents')
+        return calendar_view
+
+    def getFromTo(self):
+        """Obtain a from/to dict in a way compatible with parameters for Calendar view
+        something like: {'date':date , 'date_from': date, 'date_to': date_to}
+        """
+        
+        if self.data.days_before==self.data.days_after==0:
+            return {}
+        
+        today = datetime.date.today()
+        date_from = today - datetime.timedelta(self.data.days_before)
+        date_to = today + datetime.timedelta(self.data.days_after)
+        return {'date': date_from, 'date_from': date_from, 'date_to': date_to}
 
     def events(self):
         catalog = getToolByName(self, 'portal_catalog')
@@ -141,6 +181,7 @@ class Renderer(base.Renderer):
         return root
 
 
+    @memoize
     def portal(self):
         portal_state = getMultiAdapter((self.context, self.request), name=u'plone_portal_state')
         return portal_state.portal()
