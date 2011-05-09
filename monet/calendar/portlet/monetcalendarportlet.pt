@@ -18,7 +18,7 @@
                 <p class="documentDescription searchEventDescription"
                    tal:content="event/Description"></p>
                 <div class="searchEventLocation">
-                    <strong i18n:translate="">Where</strong>:<br/>
+                    <strong i18n:translate="" i18n:domain="monet.calendar.extensions">Where</strong>:<br/>
                     <span tal:replace="event/getLocation">
                         location
                     </span>
@@ -28,11 +28,11 @@
                     </span>                            
                 </div>
                 <div class="searchEventTime">
-                    <strong i18n:translate="">When</strong>
+                    <strong i18n:translate="" i18n:domain="monet.calendar.extensions">When</strong>
                     <p tal:replace="structure event/getTime" />
                 </div>
                 <div class="searchEventType" tal:define="event_types event/getEventType">
-                    <strong i18n:translate="">Event type</strong>:
+                    <strong i18n:translate="" i18n:domain="monet.calendar.extensions">Event type</strong>:
                     <span tal:condition="event_types" i18n:domain="monet.calendar.event"
                           i18n:translate="" tal:content="python: event_types[0]" class="discreet">
                         eventType
@@ -51,11 +51,5 @@
 
         </dd>
     </tal:events>
-
-    <dd class="portletFooter">
-        <span class="portletBottomLeft"></span>
-        Footer
-        <span class="portletBottomRight"></span>
-    </dd>
 
 </dl>

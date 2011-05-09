@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.1.0'
 
 setup(name='monet.calendar.portlet',
       version=version,
@@ -31,7 +31,6 @@ setup(name='monet.calendar.portlet',
       ],
       entry_points="""
       # -*- Entry points: -*-
-
       [z3c.autoinclude.plugin]
       target = plone
       """,

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 import datetime
 import time
@@ -35,19 +36,24 @@ class IMonetCalendarPortlet(IPortletDataProvider):
                              required=True)
 
     calendar_section_path = schema.Choice(title=_(u'Calendar Section'),
-                                          description=_(u'Object providing the events to show in the portlet'),
+                                          description=_('calendar_section_path',
+                                                        u'Calendar section providing the events to be shown in the portlet'),
                                           required=True,
                                           source=SearchableTextSourceBinder({'object_provides': IMonetCalendarSection.__identifier__},
                                                                             default_query='path: '))
 
     days_before = schema.Int(title=_('Days before'),
-                             description=_('Number of days, before the current date, to include in the search'),
+                             description=_('days_before_help',
+                                           u'Number of days, before the current date, to be included in the search.\n '
+                                           u'Keep 0 to show only today events.'),
                              required=True,
                              min=0,
                              default=0)
 
     days_after = schema.Int(title=_('Days after'),
-                            description=_('Number of days, after the current date, to include in the search'),
+                            description=_('days_after_help',
+                                           u'Number of days, after the current date, to be included in the search.\n '
+                                           u'Keep 0 to show only today events.'),
                             required=True,
                             min=0,
                             default=7)

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: monet.calendar.portlet\n"
-"POT-Creation-Date: 2011-05-06 16:03+0000\n"
+"POT-Creation-Date: 2011-05-09 07:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Marco Mariani <marco.mariani@redturtle.net>\n"
 "Language-Team: RedTurtle Technology <sviluppoplone@redturtle.net>\n"
@@ -14,47 +14,42 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: monet.calendar.portlet\n"
 
-#: ./monetcalendarportlet.py:55
+#: ../monetcalendarportlet.py:61
 msgid "Cache timeout"
 msgstr "Permanenza in cache"
 
-#: ./monetcalendarportlet.py:37
+#: ../monetcalendarportlet.py:38
 msgid "Calendar Section"
 msgstr "Sezione Calendario"
 
-#: ./monetcalendarportlet.py:49
+#: ../monetcalendarportlet.py:53
 msgid "Days after"
 msgstr "Nr. giorni dopo"
 
-#: ./monetcalendarportlet.py:43
+#: ../monetcalendarportlet.py:45
 msgid "Days before"
 msgstr "Nr. giorni prima"
 
-#: ./monetcalendarportlet.pt:35
-msgid "Event type"
-msgstr "Tipo di evento"
-
-#: ./monetcalendarportlet.py:56
+#: ../monetcalendarportlet.py:62
 msgid "Expiration time for cached results (in minutes)"
 msgstr "Tempo di scadenza dei risultati in cache (minuti)"
 
-#: ./monetcalendarportlet.py:50
-msgid "Number of days, after the current date, to include in the search"
-msgstr "Numero di giorni, dopo la data odierna, da includere nella ricerca"
+#. Default: "Calendar section providing the events to be shown in the portlet"
+#: ../monetcalendarportlet.py:39
+msgid "calendar_section_path"
+msgstr "Sezione calendario che fornisce gli eventi da mostrare nel riquadro"
 
-#: ./monetcalendarportlet.py:44
-msgid "Number of days, before the current date, to include in the search"
-msgstr "Numero di giorni, prima della data odierna, da includere nella ricerca"
+#. Default: "Number of days, after the current date, to be included in the search.\n Keep 0 to show only today events."
+#: ../monetcalendarportlet.py:54
+msgid "days_after_help"
+msgstr ""
+"Numero di giorni, dopo la data corrente, da includere nella ricerca\n"
+"Lascia 0 per mostrare solo gli eventi di oggi."
 
-#: ./monetcalendarportlet.py:38
-msgid "Object providing the events to show in the portlet"
-msgstr "Oggetto che fornisce gli eventi da mostrare nella portlet"
-
-#: ./monetcalendarportlet.pt:31
-msgid "When"
-msgstr "Orari"
-
-#: ./monetcalendarportlet.pt:21
-msgid "Where"
-msgstr "Dove"
+#. Default: "Number of days, before the current date, to be included in the search.\n Keep 0 to show only today events."
+#: ../monetcalendarportlet.py:46
+msgid "days_before_help"
+msgstr ""
+"Numero di giorni, prima della data corrente, da includere nella ricerca\n"
+"Lascia 0 per mostrare solo gli eventi di oggi."
 
