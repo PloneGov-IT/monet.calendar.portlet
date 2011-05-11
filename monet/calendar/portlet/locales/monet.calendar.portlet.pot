@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-05-09 15:10+0000\n"
+"POT-Creation-Date: 2011-05-11 13:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: monet.calendar.portlet\n"
 
-#: ../monetcalendarportlet.py:71
+#: ../monetcalendarportlet.py:80
 msgid "Cache timeout"
 msgstr ""
 
@@ -33,11 +33,15 @@ msgstr ""
 msgid "Days before"
 msgstr ""
 
-#: ../monetcalendarportlet.py:72
+#: ../monetcalendarportlet.py:81
 msgid "Expiration time for cached results (in minutes)"
 msgstr ""
 
 #: ../monetcalendarportlet.py:62
+msgid "Header as link"
+msgstr ""
+
+#: ../monetcalendarportlet.py:71
 msgid "Hide portlet"
 msgstr ""
 
@@ -56,8 +60,13 @@ msgstr ""
 msgid "days_before_help"
 msgstr ""
 
-#. Default: "Tick this box if you want to render the text above without the standard header, border or footer."
+#. Default: "Tick this box if you want that the portlet header will be a link to then related calendar."
 #: ../monetcalendarportlet.py:63
+msgid "header_as_link_help"
+msgstr ""
+
+#. Default: "Tick this box if you want to render the text above without the standard header, border or footer."
+#: ../monetcalendarportlet.py:72
 msgid "hide_portlet_help"
 msgstr ""
 

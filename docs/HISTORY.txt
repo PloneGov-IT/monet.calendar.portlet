@@ -1,6 +1,15 @@
 Changelog
 =========
 
+0.2.0 (2011-05-11)
+------------------
+
+* fixed italian translation [keul]
+* fixed a bug that make the portlet broken when
+  specifying 0 and 0 in "days" paramenter [keul]
+* added ``Header as link`` portlet option, for make the portlet
+  title clickable [keul]
+
 0.1.0 (2011-05-09)
 ------------------
 

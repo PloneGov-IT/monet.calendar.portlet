@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: monet.calendar.portlet\n"
-"POT-Creation-Date: 2011-05-09 15:10+0000\n"
+"POT-Creation-Date: 2011-05-11 13:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Marco Mariani <marco.mariani@redturtle.net>\n"
 "Language-Team: RedTurtle Technology <sviluppoplone@redturtle.net>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: monet.calendar.portlet\n"
 
-#: ../monetcalendarportlet.py:71
+#: ../monetcalendarportlet.py:80
 msgid "Cache timeout"
 msgstr "Permanenza in cache"
 
@@ -30,11 +30,15 @@ msgstr "Nr. giorni dopo"
 msgid "Days before"
 msgstr "Nr. giorni prima"
 
-#: ../monetcalendarportlet.py:72
+#: ../monetcalendarportlet.py:81
 msgid "Expiration time for cached results (in minutes)"
 msgstr "Tempo di scadenza dei risultati in cache (minuti)"
 
 #: ../monetcalendarportlet.py:62
+msgid "Header as link"
+msgstr "Header cliccabile"
+
+#: ../monetcalendarportlet.py:71
 msgid "Hide portlet"
 msgstr "Nascondi riquadro"
 
@@ -47,18 +51,23 @@ msgstr "Sezione calendario che fornisce gli eventi da mostrare nel riquadro"
 #: ../monetcalendarportlet.py:55
 msgid "days_after_help"
 msgstr ""
-"Numero di giorni, dopo la data corrente, da includere nella ricerca\n"
+"Numero di giorni, dopo la data corrente, da includere nella ricerca.\n"
 "Lascia 0 per mostrare solo gli eventi di oggi."
 
 #. Default: "Number of days, before the current date, to be included in the search.\n Keep 0 to show only today events."
 #: ../monetcalendarportlet.py:47
 msgid "days_before_help"
 msgstr ""
-"Numero di giorni, prima della data corrente, da includere nella ricerca\n"
+"Numero di giorni, prima della data corrente, da includere nella ricerca.\n"
 "Lascia 0 per mostrare solo gli eventi di oggi."
 
-#. Default: "Tick this box if you want to render the text above without the standard header, border or footer."
+#. Default: "Tick this box if you want that the portlet header will be a link to then related calendar."
 #: ../monetcalendarportlet.py:63
+msgid "header_as_link_help"
+msgstr "Seleziona se vuoi che il titolo della portlet sia un collegamento al calendario collegato."
+
+#. Default: "Tick this box if you want to render the text above without the standard header, border or footer."
+#: ../monetcalendarportlet.py:72
 msgid "hide_portlet_help"
 msgstr "Seleziona se vuoi visualizzare il riquadro senza le solite sezioni di intestazione, bordi e piè di pagina."
 

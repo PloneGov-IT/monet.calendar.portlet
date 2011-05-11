@@ -3,7 +3,10 @@
 
     <dt class="portletHeader" tal:condition="not:view/data/omit_border">
         <span class="portletTopLeft"></span>
-        <span tal:replace="view/data/header" />
+        <a class="tile" tal:attributes="href view/calendar_section/absolute_url"
+		                tal:omit-tag="not:view/data/header_as_link">
+			<span tal:replace="view/data/header" />
+		</a>
         <span class="portletTopRight"></span>
     </dt>
 

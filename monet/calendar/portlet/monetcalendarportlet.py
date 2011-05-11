@@ -59,6 +59,15 @@ class IMonetCalendarPortlet(IPortletDataProvider):
                             min=0,
                             default=7)
 
+    header_as_link = schema.Bool(title=_(u"Header as link"),
+                              description=_('header_as_link_help',
+                                            _(u"Tick this box if you want that the portlet header will "
+                                               "be a link to then related calendar.")
+                                             ),
+                              required=True,
+                              default=True)
+
+
     omit_border = schema.Bool(title=_(u"Hide portlet"),
                               description=_('hide_portlet_help',
                                             _(u"Tick this box if you want to render the text above "
@@ -86,14 +95,16 @@ class Assignment(base.Assignment):
     days_before = 0
     days_after = 0
     omit_border = False
+    header_as_link = True
     timeout = 0
 
-    def __init__(self, header, calendar_section_path, days_before, days_after, omit_border, timeout):
+    def __init__(self, header, calendar_section_path, days_before, days_after, omit_border, header_as_link, timeout):
         self.header = header
         self.calendar_section_path = calendar_section_path
         self.days_before = days_before
         self.days_after = days_after
         self.omit_border = omit_border
+        self.header_as_link = header_as_link
         self.timeout = timeout
 
 
@@ -141,14 +152,12 @@ class Renderer(base.Renderer):
     def getFromTo(self):
         """Obtain a from/to dict in a way compatible with parameters for Calendar view
         something like: {'date':date , 'date_from': date, 'date_to': date_to}
-        """
-        
-        if self.data.days_before==self.data.days_after==0:
-            return {}
-        
+        """        
         today = datetime.date.today()
         date_from = today - datetime.timedelta(self.data.days_before)
         date_to = today + datetime.timedelta(self.data.days_after)
+        if self.data.days_before==self.data.days_after==0:
+            return {'date': date_from}
         return {'date': date_from, 'date_from': date_from, 'date_to': date_to}
 
     def events(self):
