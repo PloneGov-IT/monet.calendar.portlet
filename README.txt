@@ -5,6 +5,12 @@ Portlet extension for the Plone suite `Monet Calendar`__.
 
 __ http://plone.org/products/monet.calendar.star
 
+It add a new portlet type (designed for beeing used where wide space is available, like
+inside a `collective.portletpage`__ area) that display results and view taken from a
+calendar section inside the site. You can also provide additional filters on the portlet itself.
+
+__ http://plone.org/products/collective.portletpage/
+
 Credits
 =======
   
