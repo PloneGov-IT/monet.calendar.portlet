@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 * fixed portlet permission to a better ones (also compatible with Plone 4.1) [keul]
+* added the default values to the __init__ parameters into the assignment of portlet [mirco]
 
 0.2.0 (2011-05-11)
 ------------------

@@ -98,7 +98,7 @@ class Assignment(base.Assignment):
     header_as_link = True
     timeout = 0
 
-    def __init__(self, header, calendar_section_path, days_before, days_after, omit_border, header_as_link, timeout):
+    def __init__(self, header=u'', calendar_section_path=u'path: ', days_before=0, days_after=0, omit_border=False, header_as_link=True, timeout=0):
         self.header = header
         self.calendar_section_path = calendar_section_path
         self.days_before = days_before
