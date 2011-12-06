@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.3.0-unreleased'
+version = '0.3.0'
 
 setup(name='monet.calendar.portlet',
       version=version,

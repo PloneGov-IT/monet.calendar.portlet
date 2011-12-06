@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.3.0 (Unreleased)
+0.3.0 (2011-12-06)
 ------------------
 
 * fixed portlet permission to a better ones (also compatible with Plone 4.1) [keul]
