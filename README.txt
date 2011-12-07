@@ -23,7 +23,7 @@ Developed with the support of:
 
 * `Provincia di Ferrara`__
 
-  .. image:: http://people.provincia.fe.it/people/img/logo_provincia.png
+  .. image:: http://www.provincia.fe.it/Distribuzione/logo_provincia.png
      :alt: Provincia di Ferrara - logo
 
 * `Regione Emilia Romagna`__
