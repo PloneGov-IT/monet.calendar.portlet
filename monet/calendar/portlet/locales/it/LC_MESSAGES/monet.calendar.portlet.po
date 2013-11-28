@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: monet.calendar.portlet\n"
-"POT-Creation-Date: 2011-05-11 13:48+0000\n"
+"POT-Creation-Date: 2013-11-28 14:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Marco Mariani <marco.mariani@redturtle.net>\n"
 "Language-Team: RedTurtle Technology <sviluppoplone@redturtle.net>\n"
@@ -13,6 +13,7 @@ msgstr ""
 "Language-Name: Italian\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: monet.calendar.portlet\n"
+"X-Is-Fallback-For: it-ch it-it\n"
 
 #: ../monetcalendarportlet.py:80
 msgid "Cache timeout"
