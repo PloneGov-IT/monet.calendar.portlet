@@ -19,15 +19,21 @@
        provides="Products.GenericSetup.interfaces.EXTENSION"
        />
 
-     <plone:portlet
-         name="monet.calendar.portlet.MonetCalendarPortlet"
-         interface=".monetcalendarportlet.IMonetCalendarPortlet"
-         assignment=".monetcalendarportlet.Assignment"
-         view_permission="zope2.View"
-         edit_permission="plone.app.portlets.ManagePortlets"
-         renderer=".monetcalendarportlet.Renderer"
-         addview=".monetcalendarportlet.AddForm"
-         editview=".monetcalendarportlet.EditForm"
-         />
+    <plone:portlet
+       name="monet.calendar.portlet.MonetCalendarPortlet"
+       interface=".monetcalendarportlet.IMonetCalendarPortlet"
+       assignment=".monetcalendarportlet.Assignment"
+       view_permission="zope2.View"
+       edit_permission="plone.app.portlets.ManagePortlets"
+       renderer=".monetcalendarportlet.Renderer"
+       addview=".monetcalendarportlet.AddForm"
+       editview=".monetcalendarportlet.EditForm"
+       />
+
+   <plone:portletRenderer
+       portlet="plone.app.portlets.portlets.calendar.ICalendarPortlet"
+       layer="monet.calendar.event.interfaces.IMonetEventLayer"
+       class=".monetcalendar.Renderer"
+       />
 
 </configure>

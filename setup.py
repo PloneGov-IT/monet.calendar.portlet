@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.3.0'
+version = '0.4.0.dev0'
 
 setup(name='monet.calendar.portlet',
       version=version,
-      description="An  alternative calendar portlet for the Plone Monet Calendar events suite",
-      long_description=open("README.txt").read() + "\n" +
+      description="Calendar related portlets for the Plone Monet Calendar events suite",
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
@@ -15,6 +15,8 @@ setup(name='monet.calendar.portlet',
         "Framework :: Plone :: 3.3",
         "Framework :: Plone :: 4.0",
         "Framework :: Plone :: 4.1",
+        "Framework :: Plone :: 4.2",
+        "Framework :: Plone :: 4.3",
         "Programming Language :: Python",
         ],
       keywords='plone plonegov calendar event monet',
