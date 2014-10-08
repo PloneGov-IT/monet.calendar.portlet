@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.4.0.dev0'
+version = '0.4.0'
 
 setup(name='monet.calendar.portlet',
       version=version,
@@ -12,9 +12,6 @@ setup(name='monet.calendar.portlet',
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
         "Framework :: Plone",
-        "Framework :: Plone :: 3.3",
-        "Framework :: Plone :: 4.0",
-        "Framework :: Plone :: 4.1",
         "Framework :: Plone :: 4.2",
         "Framework :: Plone :: 4.3",
         "Programming Language :: Python",
