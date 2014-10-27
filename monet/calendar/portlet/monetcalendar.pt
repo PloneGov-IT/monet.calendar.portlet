@@ -16,8 +16,10 @@
            tal:define="prevMonthMonth view/prevMonthMonth;
                        prevMonthYear view/prevMonthYear"
            tal:attributes="id python:showPrevMonth and 'calendar-previous' or '';
-                           href python:'?%smonth:int=%d&amp;year:int=%d&amp;orig_query=%s' % (query_string, prevMonthMonth, prevMonthYear, url_quote_plus(query_string)); 
-                           class string:kssCalendarChange kssattr-year-${prevMonthYear} kssattr-month-${prevMonthMonth} calendarPrevious;"
+                           href python:'?%smonth:int=%d&amp;year:int=%d&amp;orig_query=%s' % (query_string, prevMonthMonth, prevMonthYear, url_quote_plus(query_string));
+                           class string:kssCalendarChange kssattr-year-${prevMonthYear} kssattr-month-${prevMonthMonth} calendarPrevious;
+                           data-year prevMonthYear;
+                           data-month prevMonthMonth;"
            tal:condition="showPrevMonth"
            i18n:attributes="title title_previous_month;">&laquo;</a>
 
@@ -36,7 +38,9 @@
                        nextMonthYear view/nextMonthYear"
            tal:attributes="id python:showNextMonth and 'calendar-next' or '';
                            href python:'?%smonth:int=%d&amp;year:int=%d&amp;orig_query=%s' % (query_string, nextMonthMonth, nextMonthYear, url_quote_plus(query_string));
-                           class string:kssCalendarChange kssattr-year-${nextMonthYear} kssattr-month-${nextMonthMonth} calendarNext;"
+                           class string:kssCalendarChange kssattr-year-${nextMonthYear} kssattr-month-${nextMonthMonth} calendarNext;
+                           data-year nextMonthYear;
+                           data-month nextMonthMonth;"
            tal:condition="showNextMonth"
            i18n:attributes="title title_next_month;">&raquo;</a>
         <span class="portletTopRight"></span>
