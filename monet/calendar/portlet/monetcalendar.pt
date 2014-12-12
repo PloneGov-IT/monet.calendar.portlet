@@ -48,8 +48,7 @@
 
     <dd class="portletItem">
         <table class="ploneCalendar"
-               i18n:domain="plone"
-               i18n:attributes="summary summary_calendar;">
+               i18n:domain="plone">
             <caption class="hiddenStructure"
                      tal:content="view/monthName">Month name</caption>
             <thead>
