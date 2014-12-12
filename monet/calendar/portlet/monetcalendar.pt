@@ -48,7 +48,6 @@
 
     <dd class="portletItem">
         <table class="ploneCalendar"
-               summary="Calendar"
                i18n:domain="plone"
                i18n:attributes="summary summary_calendar;">
             <caption class="hiddenStructure"

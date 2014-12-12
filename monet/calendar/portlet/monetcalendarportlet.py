@@ -144,7 +144,7 @@ class Renderer(base.Renderer):
         calendar = root.restrictedTraverse(self.data.calendar_section_path.lstrip('/'), default=None)
         return calendar
 
-    @property    
+    @property
     def calendar_view(self):
         calendar_view = getMultiAdapter((self.calendar_section, self.request), name=u'monetsearchevents')
         return calendar_view
@@ -152,7 +152,7 @@ class Renderer(base.Renderer):
     def getFromTo(self):
         """Obtain a from/to dict in a way compatible with parameters for Calendar view
         something like: {'date':date , 'date_from': date, 'date_to': date_to}
-        """        
+        """
         today = datetime.date.today()
         date_from = today - datetime.timedelta(self.data.days_before)
         date_to = today + datetime.timedelta(self.data.days_after)
